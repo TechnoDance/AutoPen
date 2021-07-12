@@ -29,45 +29,38 @@ echo "3. Burpsuite"
 echo "4. Airgeddon"
 echo "5."
 echo "6."
-sleep 1
+sleep 10
 read option
-sleep 2
+sleep 5
 if [ $option == "1" ]; then
     bash /Start/Scripts/AutoAir1.sh
 else
     sleep 0
 fi
-sleep 0
 if [ $option == "2" ]; then
     echo "test2"
 else
     sleep 0
 fi
-sleep 0
 if [ $option == "3" ]; then
     echo "test3"
 fi
-sleep 0
 else
     sleep 0
 fi
-sleep 0
 if [ $option == "4" ]; then
     echo "test4"
 else
     sleep 0
 fi
-sleep 0
 if [ $option == "5" ]; then
     echo "test5"
 else
     sleep 0
 fi
-sleep 0
 if [ $option == "6" ]; then
     echo "test6"
 else
     sleep 0
 fi
-sleep 0
 echo done!
