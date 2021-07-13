@@ -24,36 +24,60 @@ read $mon
 echo "We will now use $mon"
 mon=$mon
 echo "what will you be doing today"
-echo "1. Aircrack"
+echo "1. Aircrack Automated"
+echo "1.2 Aircrack mostly automated (experimental)"
 echo "2. Metasploit"
 echo "3. Burpsuite"
 echo "4. Airgeddon"
-echo "5."
-echo "6."
+echo "5. binwalk"
+echo "6. gobuster"
+echo "7. hydra"
+echo "8. john"
+echo "9. msfvenom"
+echo "10. nikto"
+echo "11. nmap"
+echo "12. rustscan"
+echo "13. sqlmap"
+echo "14. steghide"
+echo "15. the harvester"
+echo "16. zbarimg"
 sleep 10
 read option
 sleep 0
 if [ $option == "1" ]; then
-   xterm -hold -e "bash /Start/Scripts/aircrack-ng/AutoAir.sh"
+	xterm -hold -e "bash /Start/Scripts/aircrack-ng/AutoAir.sh"
+elif [ $option == "1.2" ]; then
+	echo "this function is not yet working"
+elif [ $option == "2" ]; then
+	xterm -hold -e ""
+elif [ $option == "3" ]; then
+	echo "this function is not yet working"
+	xterm -hold -e ""
+elif [ $option == "4" ]; then
+	xterm -hold -e "sudo bash /Start/Scripts/airgeddon/airgeddon.sh"
+elif [ $option == "5" ]; then
+	xterm -hold -e "bash /Start/Scripts/binwalk/binwalk.sh"
+elif [ $option == "6" ]; then
+	xterm -hold -e "bash /Start/Scripts/gobuster/gobuster.sh"
+elif [ $option == "7" ]; then
+	xterm -hold -e "bash /Start/Scripts/hydra/hydra.sh"
+elif [ $option == "8" ]; then
+	xterm -hold -e "bash /Start/Scripts/john/john.sh"
+elif [ $option == "9" ]; then
+	xterm -hold -e "bash /Start/Scripts/msfvenom/msfvenom.sh"
+elif [ $option == "10" ]; then
+	xterm -hold -e "bash /Start/Scripts/nikto/nikto.sh"
+elif [ $option == "11" ]; then
+	xterm -hold -e "bash /Start/Scripts/nmap/nmap.sh"
+elif [ $option == "12" ]; then
+	xterm -hold -e "bash /Start/Scripts/rustscan/rustscan.sh"
+elif [ $option == "13" ]; then
+	xterm -hold -e "bash /Start/Scripts/sqlmap/sqlmap.sh"
+elif [ $option == "14" ]; then
+	xterm -hold -e "bash /Start/Scripts/steghide/steghide.sh"
+elif [ $option == "15" ]; then
+	xterm -hold -e "bash /Start/Scripts/theHarvester/theHarvester.sh"
+elif [ $option == "16" ]; then
+	xterm -hold -e "bash /Start/Scripts/zbarimg/zbarimg.sh"
 else
-   if [ $option == "2" ]; then
-      echo "2"
-   else
-      if [ $option == "3" ]; then
-   		echo "3"
-		else
-			if [ $option == "4" ]; then
-				echo "4"
-			else
-				if [ $option == "5" ]; then
-					echo "5"
-				else
-					if [ $option == "6" ]; then
-						echo "6"
-					fi
-				fi
-			fi
-		fi
-   fi
-fi
-fi
+	echo "invalid choice"
