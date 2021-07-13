@@ -46,7 +46,7 @@ else
 			else
 				if [ $option == "5" ]; then
 					echo "5"
-				then
+				else
 					if [ $option == "6" ]; then			
 						echo "6"
 					fi
