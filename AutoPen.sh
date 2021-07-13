@@ -31,36 +31,28 @@ echo "5."
 echo "6."
 sleep 10
 read option
-sleep 5
+sleep 0
 if [ $option == "1" ]; then
-    bash /Start/Scripts/AutoAir1.sh
+   xterm -hold -e "bash /Start/Scripts/aircrack-ng/AutoAir.sh"
 else
-    sleep 0
-fi
-if [ $option == "2" ]; then
-    echo "test2"
-else
-    sleep 0
-fi
-if [ $option == "3" ]; then
-    echo "test3"
-fi
-else
-    sleep 0
-fi
-if [ $option == "4" ]; then
-    echo "test4"
-else
-    sleep 0
-fi
-if [ $option == "5" ]; then
-    echo "test5"
-else
-    sleep 0
-fi
-if [ $option == "6" ]; then
-    echo "test6"
-else
-    sleep 0
+   if [ $option == "2" ]; then
+      echo "2"
+   else
+      if [ $option == "3" ]; then
+   		echo "3"
+		else
+			if [ $option == "4" ]; then
+				echo "4"
+			else
+				if [ $option == "5" ]; then
+					echo "5"
+				then
+					if [ $option == "6" ]; then			
+						echo "6"
+					fi
+				fi
+			fi
+		fi
+   fi
 fi
 echo done!
