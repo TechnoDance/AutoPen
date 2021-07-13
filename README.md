@@ -1,2 +1,2 @@
 # AutoPen
-My automated pentest suite of scripts for automation and useful tools. Not everything here is my code. Thanks to https://github.com/FonderElite/auto-hack for many scripts integrated into mine. Be sure to check out the original creator of these scripts. I take no credit for 80% of the work here.
+My automated pentest suite of scripts for automation and useful tools. Not everything here is my code. Thanks to https://github.com/FonderElite/auto-hack, https://github.com/H1R0GH057/Anonymous, and https://github.com/v1s1t0r1sh3r3/airgeddon for many scripts integrated into mine. Be sure to check out the original creator of these scripts. I take no credit for 80% of the work here.
