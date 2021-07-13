@@ -6,9 +6,10 @@ echo "Welcome to my automated pentest suite of scripts for automation and useful
 echo "Please be sure you are running as root, if you are not ctrl c to stop the script and start as sudo"
 echo "Would you like to update your system (apt) (y/n)"
 if [ $option == "y" ]; then
-    apt-get update -y && apt-get upgrade -y
+   apt-get update -y && apt-get upgrade -y
 else
-    sleep 2
+   sleep 2
+fi
 echo "script will begin in 10s"
 sleep 10
 echo "First enter some basic paramiters and we shall get started (some scripts may need to have this independantly done too)."
@@ -47,7 +48,7 @@ else
 				if [ $option == "5" ]; then
 					echo "5"
 				else
-					if [ $option == "6" ]; then			
+					if [ $option == "6" ]; then
 						echo "6"
 					fi
 				fi
@@ -55,4 +56,4 @@ else
 		fi
    fi
 fi
-echo done!
+fi
