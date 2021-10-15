@@ -41,6 +41,7 @@ echo "13. sqlmap"
 echo "14. steghide"
 echo "15. the harvester"
 echo "16. zbarimg"
+echo "17. Other scripts"
 sleep 10
 read option
 sleep 0
@@ -49,7 +50,7 @@ if [ $option == "1" ]; then
 elif [ $option == "1.2" ]; then
 	echo "this function is not yet working"
 elif [ $option == "2" ]; then
-	xterm -hold -e ""
+	xterm -hold -e "echo"
 elif [ $option == "3" ]; then
 	echo "this function is not yet working"
 	xterm -hold -e ""
@@ -81,3 +82,6 @@ elif [ $option == "16" ]; then
 	xterm -hold -e "bash /Start/Scripts/zbarimg/zbarimg.sh"
 else
 	echo "invalid choice"
+fi
+
+#etc.

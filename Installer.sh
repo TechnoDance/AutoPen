@@ -1,17 +1,17 @@
 #!/bin/sh
 #important updates
-apt-get update  # To get the latest package lists
-apt-get upgrade
-parrot-upgrade # Make sure dist is up to date
-apt-get dist-upgrade # Upgrade distribution
+apt-get update -y # To get the latest package lists
+apt-get upgrade -y
+parrot-upgrade -y # Make sure dist is up to date
+apt-get dist-upgrade -y # Upgrade distribution
 
 #install stuff
 apt-get install git -y
 apt-get install gedit -y
 apt-get install leafpad -y
 apt-get install tilix -y
-apt install ruby --classic
-apt install keepassxc
+apt install ruby --classic -y
+apt install keepassxc -y
 apt install libdvdnav4 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libdvd-pkg -y # Essential packages
 apt-get install aircrack-ng binwalk gobuster hydra nikto nmap rustscan sqlmap steghide -y # Tools
 
